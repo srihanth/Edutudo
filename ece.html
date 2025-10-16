@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edutudo • ECE Lectures</title>
+  <link rel="stylesheet" href="ece.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="logo">Edutudo — ECE</h1>
+    <nav><a href="index.html">Home</a><a href="diploma.html">Diploma</a><a class="active" href="#">ECE</a></nav>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" placeholder="Search lectures (ECE)..." />
+      <div class="tools">
+        <button id="showUnlearned">Show Unlearned</button>
+        <button id="resetAll">Reset</button>
+      </div>
+    </section>
+
+    <section id="cards" class="cards">
+      <article class="card" data-video="l9nh1l8ZIJQ">
+        <img class="thumb" src="https://img.youtube.com/vi/l9nh1l8ZIJQ/0.jpg" alt="">
+        <div class="info">
+          <h3>Signals & Systems</h3>
+          <p>Continuous & discrete signals basics.</p>
+          <div class="actions">
+            <button class="open">Open Lecture</button><button class="preview">Preview</button>
+            <button class="download">Download Material</button><button class="mark">Mark Learned</button>
+            <button class="share">Share</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-video="ScMzIvxBSi4">
+        <img class="thumb" src="https://img.youtube.com/vi/ScMzIvxBSi4/0.jpg" alt="">
+        <div class="info">
+          <h3>Communication Systems</h3>
+          <p>Modulation techniques overview.</p>
+          <div class="actions">
+            <button class="open">Open Lecture</button><button class="preview">Preview</button>
+            <button class="download">Download Material</button><button class="mark">Mark Learned</button>
+            <button class="share">Share</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-video="kJQP7kiw5Fk">
+        <img class="thumb" src="https://img.youtube.com/vi/kJQP7kiw5Fk/0.jpg" alt="">
+        <div class="info">
+          <h3>Analog Electronics</h3><p>Diodes, transistors basics.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-video="2Xc9gXyf2G4">
+        <img class="thumb" src="https://img.youtube.com/vi/2Xc9gXyf2G4/0.jpg" alt="">
+        <div class="info">
+          <h3>Digital Logic</h3><p>Gates, minimization and design.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-video="FTQbiNvZqaY">
+        <img class="thumb" src="https://img.youtube.com/vi/FTQbiNvZqaY/0.jpg" alt="">
+        <div class="info">
+          <h3>Signals Processing</h3><p>Filters, FFT intro.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-video="ScMzIvxBSi4">
+        <img class="thumb" src="https://img.youtube.com/vi/ScMzIvxBSi4/0.jpg" alt="">
+        <div class="info">
+          <h3>Electromagnetics</h3><p>Field basics and wave propagation.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close">✕</button>
+      <div id="playerWrap" class="playerWrap"></div>
+      <div class="player-controls">
+        <label>Volume <input id="vol" type="range" min="0" max="100" value="100"></label>
+        <label>Speed
+          <select id="rate">
+            <option value="0.5">0.5</option><option value="0.75">0.75</option><option value="1" selected>1</option><option value="1.25">1.25</option><option value="1.5">1.5</option>
+          </select>
+        </label>
+        <button id="mute">Mute</button>
+        <button id="prevVideo">Prev</button>
+        <button id="nextVideo">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="ece.js"></script>
+</body>
+</html>

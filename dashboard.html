@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edutudo Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Sidebar + Main -->
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo" style="font-size: 50px;">Edutudo</h2>
+
+      <div class="user-info">
+        <img src="https://i.pravatar.cc/50" alt="profile">
+        <div>
+          <h4 style="font-size: 20px;">Arjun Kumar</h4>
+          <p>Student</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html" style="font-size: 25px;">Home</a>
+        <a href="ecet.html" style="font-size: 25px;">ECET</a>
+        <a href="diploma.html" style="font-size: 25px;">diploma</a>
+        <a href="dashboard.html" style="font-size: 25px;" class="active">Dashboard</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Header -->
+      <header class="header">
+        <input type="text" placeholder="Ctrl + K to search...">
+        <div class="header-icons">
+          <span>🌞</span>
+          <span>⚙️</span>
+          <span class="notify">🔔<small>3</small></span>
+          <img src="https://i.pravatar.cc/40" alt="profile">
+        </div>
+      </header>
+
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner-text">
+          <h2>Explore Edutudo</h2>
+          <ps style="font-size: 25px;">A brand new educational dashboard with AI-powered features. Explore endless learning possibilities with Edutudo </p>
+          <button class="btn-white" style="font-size: 25px;">Explore Now</button>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="rocket" class="banner-img">
+      </section>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="card">
+          <h4 style="color: rgb(10, 4, 187); font-size: 24px;">Data Structures & Algorithms</h4>
+          <h2> 
+            <ul style="font-size: 15px;">
+              <li>Arrays & Linked Lists</li>
+              <li>Trees & Graphs</li>
+              <li>Sorting & Searching</li>
+              <li>Dynamic Programming</li>
+            </ul>
+          </h2>
+          <p class="green">Premium</p>
+        </div>
+        <div class="card">
+          <h4 style="color: red; font-size: 24px;">Computer Networks</h4>
+          <h2>
+            <ul style="font-size: 15px;">
+              <li>Network Models</li>
+              <li>IP Addressing</li>
+              <li>Routing Protocols</li>
+              <li>Network Security</li>
+            </ul>
+          </h2>
+          <p class="green" style="font-size: 15px;">Free</p>
+        </div>
+        <div class="card">
+          <h4 style="color: red; font-size: 24px;">Database Management Systems</h4>
+          <h2>
+            <ul style="font-size: 15px;">
+              <li>ER Model</li>
+              <li>SQL</li>
+              <li>Normalization</li>
+              <li>Transactions</li>
+            </ul>
+          </h2>
+          <p class="green" style="font-size: 15px;">New</p>
+        </div>
+        <div class="card">
+          <h4 style="color: red; font-size: 24px;">Machine Learning</h4>
+          <h2>
+            <ul style="font-size: 15px;">
+              <li>Supervised Learning</li>
+              <li>Unsupervised Learning</li>
+              <li>Neural Networks</li>
+              <li>Model Evaluation</li>
+            </ul>
+          </h2>
+          <p class="green" style="font-size: 15px;">premium</p>
+        </div>
+      </section>
+
+      <!-- Bottom Widgets -->
+      <section class="bottom-widgets">
+        <div class="widget">
+          <h4>Weekly Ativity</h4>
+          <h2>5.44%</h2>
+          <p class="green" style="font-size: 20px;">+2.6%</p>
+        </div>
+        <div class="widget">
+          <h4 style="font-size: 20px;">Machine Learning</h4>
+          <p>Newly Purchased</p>
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
+          <p>70% Complete</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

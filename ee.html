@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edutudo • EE Lectures</title>
+  <link rel="stylesheet" href="ee.css" />
+</head>
+<body>
+  <header class="topbar"><h1 class="logo">Edutudo — EE</h1><nav><a href="index.html">Home</a><a href="diploma.html">Diploma</a><a class="active" href="#">EE</a></nav></header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" placeholder="Search lectures (EE)..." />
+      <div class="tools"><button id="showUnlearned">Show Unlearned</button><button id="resetAll">Reset</button></div>
+    </section>
+
+    <section id="cards" class="cards">
+      <article class="card" data-video="hY7m5jjJ9mM">
+        <img class="thumb" src="https://img.youtube.com/vi/hY7m5jjJ9mM/0.jpg">
+        <div class="info"><h3>Circuits — Ohm's Law</h3><p>Voltage, current basics with examples.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+
+      <article class="card" data-video="eVTXPUF4Oz4">
+        <img class="thumb" src="https://img.youtube.com/vi/eVTXPUF4Oz4/0.jpg">
+        <div class="info"><h3>Power Electronics</h3><p>Converters and inverter basics.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+
+      <article class="card" data-video="2Xc9gXyf2G4">
+        <img class="thumb" src="https://img.youtube.com/vi/2Xc9gXyf2G4/0.jpg">
+        <div class="info"><h3>Control Systems</h3><p>Feedback, stability basics.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+
+      <article class="card" data-video="M7lc1UVf-VE">
+        <img class="thumb" src="https://img.youtube.com/vi/M7lc1UVf-VE/0.jpg">
+        <div class="info"><h3>Signals for EE</h3><p>Time-domain signals and transforms.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+
+      <article class="card" data-video="FTQbiNvZqaY">
+        <img class="thumb" src="https://img.youtube.com/vi/FTQbiNvZqaY/0.jpg">
+        <div class="info"><h3>Power Systems</h3><p>Generation and distribution overview.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+
+      <article class="card" data-video="kJQP7kiw5Fk">
+        <img class="thumb" src="https://img.youtube.com/vi/kJQP7kiw5Fk/0.jpg">
+        <div class="info"><h3>Measurement Tools</h3><p>Oscilloscope, multimeter basics.</p>
+          <div class="actions"><button class="open">Open Lecture</button><button class="preview">Preview</button><button class="download">Download Material</button><button class="mark">Mark Learned</button><button class="share">Share</button></div></div>
+      </article>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close">✕</button>
+      <div id="playerWrap" class="playerWrap"></div>
+      <div class="player-controls">
+        <label>Volume <input id="vol" type="range" min="0" max="100" value="100"></label>
+        <label>Speed
+          <select id="rate">
+            <option value="0.5">0.5</option><option value="0.75">0.75</option><option value="1" selected>1</option><option value="1.25">1.25</option><option value="1.5">1.5</option>
+          </select>
+        </label>
+        <button id="mute">Mute</button>
+        <button id="prevVideo">Prev</button>
+        <button id="nextVideo">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="ee.js"></script>
+</body>
+</html>

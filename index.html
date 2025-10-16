@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EDUTUDO Learning Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Loader -->
+  <div id="loader">
+    <div class="spinner-box">
+      <div class="circle-border">
+        <div class="circle-core"></div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="logo">
+      <div class="logo-icon">E</div>
+      <span class="brand-name">EDUTUDO</span>
+    </div>
+    <nav>
+      <a href="#" class="active" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('ecet')">ECET</a>
+      <a href="#" onclick="showSection('diploma')">DIPLOMA</a>
+      <a href="#" onclick="showSection('aichat')">AI Chat</a>
+      <a href="#" onclick="showSection('login')">LOGIN</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home-section">
+      <h1 class="section-title">Welcome to EDUTUDO</h1>
+      <p style="text-align:center;max-width:650px;margin:0 auto 2rem auto;font-size:1.2rem;">
+        <span style="color:var(--neon-green);text-shadow:0 0 8px var(--neon-green);font-weight:700;">EDUTUDO</span> is your futuristic learning hub for AP Diploma and ECET courses. Explore branch-wise resources, video lectures, important questions, and more—all in a glowing, sci-fi inspired interface.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+  <img src="grok6.jpg" style="width: 280px; border-radius: 12px;">
+  <img src="grok5.jpg" style="width: 280px; border-radius: 12px;">
+  <img src="grok3.jpg" style="width: 280px; border-radius: 12px;">
+</div>
+
+      
+    </section>
+
+    <!-- ECET Section -->
+    <section id="ecet-section" style="display:none;">
+      <h1 class="section-title">ECET Branches</h1>
+      <div class="branch-grid">
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-blue)">💻</div><div class="branch-title">CSE</div><div>Computer Science</div></div><div class="card-back"><div class="branch-title">CSE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><a href="cse.html" class="neon-btn">Video Lectures</a><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-pink)">📡</div><div class="branch-title">ECE</div><div>Electronics & Comm.</div></div><div class="card-back"><div class="branch-title">ECE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><a href="ece.html" class="neon-btn">Video Lectures</a><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-green)">⚡</div><div class="branch-title">EEE</div><div>Electrical & Electronics</div></div><div class="card-back"><div class="branch-title">EEE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><a href="ee.html" class="neon-btn">Video Lectures</a><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-yellow)">🛠️</div><div class="branch-title">MECH</div><div>Mechanical</div></div><div class="card-back"><div class="branch-title">MECH</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><a href="mech.html" class="neon-btn">Video Lectures</a><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+      </div>
+    </section>
+
+    <!-- DIPLOMA Section -->
+    <section id="diploma-section" style="display:none;">
+      <h1 class="section-title">Diploma Branches</h1>
+      <div class="branch-grid">
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-blue)">💻</div><div class="branch-title">CSE</div><div>Computer Science</div></div><div class="card-back"><div class="branch-title">CSE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><button class="neon-btn">Video Lectures</button><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-pink)">📡</div><div class="branch-title">ECE</div><div>Electronics & Comm.</div></div><div class="card-back"><div class="branch-title">ECE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><button class="neon-btn">Video Lectures</button><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-green)">⚡</div><div class="branch-title">EEE</div><div>Electrical & Electronics</div></div><div class="card-back"><div class="branch-title">EEE</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a>
+<button class="neon-btn">Buy Course</button><button class="neon-btn">Video Lectures</button><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+        <div class="branch-card" tabindex="0"><div class="card-inner"><div class="card-front"><div class="branch-icon" style="color:var(--neon-yellow)">🛠️</div><div class="branch-title">MECH</div><div>Mechanical</div></div><div class="card-back"><div class="branch-title">MECH</div><div class="card-buttons"><a href="dashboard.html" class="neon-btn">Start Learning</a><button class="neon-btn">Buy Course</button><button class="neon-btn">Video Lectures</button><button class="neon-btn">Important Questions</button><button class="neon-btn">Study Materials</button></div></div></div></div>
+      </div>
+    </section>
+
+    <!-- AI Chat Section -->
+    <section id="aichat-section" style="display:none;">
+      <div id="ai-chatbot-section">
+        <h2 class="ai-chat-title">EDUTUDO AI Assistant</h2>
+        <div class="ai-chatbox" id="chatbox"></div>
+        <form class="ai-chat-form" id="chat-form">
+          <input type="text" id="chat-input" class="ai-chat-input" placeholder="Ask me anything..." required>
+          <button type="submit" class="ai-chat-send">Send</button>
+        </form>
+        <div id="typing-indicator" class="ai-chat-typing" style="display:none;">AI is typing...</div>
+      </div>
+    </section>
+
+    <!-- LOGIN Section -->
+    <section id="login-section" style="display:none;">
+      <div class="login-section">
+        <div class="login-flip-card" id="login-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2 class="login-title">Login</h2>
+              <input type="text" placeholder="Username" class="neon-input">
+              <input type="password" placeholder="Password" class="neon-input">
+              <button class="neon-btn login-btn">Login</button>
+              <span class="flip-link" onclick="flipLogin()">Create Account</span>
+            </div>
+            <div class="flip-back">
+              <h2 class="login-title">Register</h2>
+              <input type="text" placeholder="Username" class="neon-input">
+              <input type="email" placeholder="Email" class="neon-input">
+              <input type="password" placeholder="Password" class="neon-input">
+              <button class="neon-btn login-btn">Register</button>
+              <span class="flip-link" onclick="flipLogin()">Already have an account?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <span>EDUTUDO</span>
+      <span>Your's Ultimate Learning Platform</span>
+    </div>
+    <div class="footer-feedback">
+      <input type="text" placeholder="Your Feedback...">
+      <button>Submit</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
